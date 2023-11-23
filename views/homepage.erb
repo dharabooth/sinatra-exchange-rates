@@ -1,0 +1,11 @@
+<h1>Currency pairs</h1>
+
+<ul>
+
+<% @abbrev_list.each do |country| %>
+    <li>
+      <a href="/<%= country %>">Convert 1 <%= country %> to... </a>
+    </li>
+  <% end %>
+
+  </ul>

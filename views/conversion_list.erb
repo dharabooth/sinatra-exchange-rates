@@ -1,0 +1,14 @@
+
+<h1>Convert <%=@main_country%></h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+    <% @abbrev_list.each do |country| %>
+    <li>
+      <a href="/<%= @main_country %>/<%= country %>">
+        Convert 1 <%= @main_country %> to <%= country %>...
+      </a>
+    </li>
+    <% end %>
+</ul>
